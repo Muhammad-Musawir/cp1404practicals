@@ -16,6 +16,7 @@ for state_code in CODE_TO_NAME:
         print(f'{state_code: <4} is {name}')
     except KeyError:
         print(f'Error: {state_code} is not a valid state abbreviation')
+        user_input = input("Enter a state code: ").upper()
 
 
 for state_code, state_name in CODE_TO_NAME.items():
