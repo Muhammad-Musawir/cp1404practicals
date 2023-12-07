@@ -48,4 +48,4 @@ print(numbers_greater_than_9)
 # the result should be: 'Harlem, Hendrix, Lovelace'
 long_last_names = [name.split()[1] for name in full_names if len(name) > 11]
 result_string = ", ".join(long_last_names)
-print(result_string)
+print(result_string) names
