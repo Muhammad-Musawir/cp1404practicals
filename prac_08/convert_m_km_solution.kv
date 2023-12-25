@@ -1,0 +1,29 @@
+BoxLayout:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    TextInput:
+        id: input_miles
+        hint_text: 'Enter miles'
+        multiline: False
+        on_text: app.handle_calculate()
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+
+        Button:
+            text: '+'
+            on_press: app.handle_increment(1)
+
+        Button:
+            text: '-'
+            on_press: app.handle_increment(-1)
+
+    Label:
+        id: output_label
+        text: app.km_text
+        font_size: 40
+        color: (0, 1, 1, 1)
+        halign: 'center'
